@@ -1,13 +1,37 @@
 import './App.css'
+import {useState} from "react";
 
 function App() {
+    const [newItem,setNewItem] = useState("")
+    // setNewItem("cag")
+
+
+use
+
+use
+    use;use
+us
+    const [, set] = useState()
+    useState
+useState
+useState()
+    const [, set] = useState()
+    const [, set] = useState()
+    const [, set] = useState()
+    co
+    function handleSubmit(e){
+e.preventDefault()
+    }
 
   return (
       <>
-          <form className="new-item-form">
+          <form onSubmit={handleSubmit} className="new-item-form">
       <diu className="form-row">
         <label htmlFor = "item">New Item</label>
-          <input type= "text" id = "item" />
+          <input value={newItem}
+                 onChange={e =>setNewItem(e.target.value)}
+                 type = "text"
+                 id = "item" />
 
       </diu>
         <button className = "btn">Add</button>
